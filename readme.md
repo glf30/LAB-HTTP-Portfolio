@@ -43,7 +43,7 @@ Here is the code:
 
 ```js
 } else {
-    const fileLocation = `./public/${req.url}`;
+    const fileLocation = `.${req.url}`;
     const stream = fs.createReadStream(fileLocation);
     stream.on('open', function () {
         stream.pipe(res);
